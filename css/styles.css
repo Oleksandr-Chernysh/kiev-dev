@@ -287,3 +287,96 @@ img {
   color: #8d6515;
 }
 
+/*benefits*/
+.benefit__title {
+  font-family: "Nunito", sans-serif;  
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+  color: #324052;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%; /* чтобы элемент занимал всю ширину контейнера */
+  text-align: right;
+  padding-right: 24px;
+  margin-bottom: 24px;
+}
+
+.benefit__title::before {
+  content: "";
+  min-width: 135px;
+  height: 2px;
+  background-color: #ceb181;
+  margin-right: 16px;
+  display: inline-block;
+} 
+
+.benefits-card {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  background-color: #DDE5E8;
+  border-radius: 4px;
+  align-items: center;
+  gap: 21px;
+}
+
+.benefits-card:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.benefits-card__imgcontainer{
+  position: relative;
+}
+
+.benefits-card__gradien{
+  background: linear-gradient(
+    90deg,
+    rgba(221, 229, 232, 0) 0px,
+    rgba(221, 229, 232, 1) 100%
+  );
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+}
+
+.benefits-card__bigtext{
+font-family: Nunito;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: -0.05em;
+text-align: left;
+color: #2E688D;
+margin-bottom: 4px;
+}
+
+.benefits-card__smalltext{
+font-family: Roboto Condensed;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: -0.04em;
+text-align: left;
+color: #324052;
+}
+
+.benefits-card__first-smalltext{
+  width: 110px;
+}
+
+.benefits-card__second-smalltext{
+  width: 143px;
+}
+
+.benefits-card__second-bigtext{
+  width: 126px;
+}
+
+.benefits-card__fourth-smalltext{
+  width: 193px;
+}
